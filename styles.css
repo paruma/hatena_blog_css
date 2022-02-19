@@ -1,0 +1,208 @@
+/* <system section="theme" selected="handwriting"> */
+@import "/css/theme/handwriting/handwriting.css";
+/* </system> */
+
+/* <system section="background" selected="default"> */
+/* default */
+/* </system> */
+
+/*===================================
+  目次
+===================================*/
+/* 参考: https://www.haurin-zatunenlife.com/entry/hatenablog-mokuji-midasi*/
+/*目次のデザイン変更*/
+.table-of-contents {
+  padding: 15px 10px 15px 35px; /* 枠内の余白(上右下左) */
+  font-size: 100%; /* 文字サイズ */
+  border: dotted 1px #777; /* 線の種類と色 */
+  background: rgba(219, 236, 238, 0.2); /* 背景 */
+}
+.table-of-contents:before {
+  content: "目次";
+  font-size: 140%;
+  color: #000; /* 文字の色 */
+}
+
+/*===================================
+  見出し
+===================================*/
+.entry-content h5 {
+  font-weight: bold;
+}
+
+.entry-content h6 {
+  font-weight: bold;
+}
+/* 参考: CSSのコピペだけ！おしゃれな見出しのデザイン例まとめ68選 https://saruwakakun.com/html-css/reference/h-design */
+/* 多少変更 */
+
+.entry-content h1 {
+  padding: 0.5em 0.6em;
+  /*color: #010101;文字色*/
+  background: #ecf5f8; /*背景色*/
+  /*#e7f3f3*/
+  border-bottom: solid 4px #bdd4dc; /*下線*/
+}
+
+.entry-content h2 {
+  padding-left: 0.1em;
+  background: none;
+  border-bottom: dashed 2px #bdd4dc;
+}
+
+.entry-content h4 {
+  font-size: 125%;
+  background-size: auto auto;
+}
+
+/*===================================
+  summary
+===================================*/
+/*summaryの矢印の表示(このデザインではデフォで矢印が表示されないので表示させる)*/
+summary {
+  display: list-item;
+}
+
+/*===================================
+  alert(boostrap風)
+===================================*/
+/* はてなブログでちょっとおしゃれに枠線と背景色を表示するカスタマイズ | つばさのーと https://www.tsubasa-note.blog/entry/bootstrap-alerts/ */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+/*===================================
+  pタグの変更
+===================================*/
+.entry-content p {
+  /*デフォは 0 0 15.2px 0
+    枠とフィットするようにマージンを上下対称にする*/
+  margin: 8px 0 8px 0;
+}
+
+/*===================================
+  定理
+===================================*/
+/*参考: 【CSS】おしゃれなボックスデザイン（囲み枠）のサンプル30 https://saruwakakun.com/html-css/reference/box */
+.thm {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #79a9b9;
+  border-radius: 0 5px 5px 5px;
+}
+.thm .title {
+  position: absolute;
+  display: inline-block;
+  top: -27px;
+  left: -3px;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: #79a9b9;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.thm .body {
+  margin: 0;
+  padding: 0;
+}
+
+/*===================================
+  例・問題
+===================================*/
+.ex {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.7em 1em 0.5em 1em;
+  border: solid 3px #79a9b9;
+  border-radius: 8px;
+}
+.ex .title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 12px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #fff;
+  color: #79a9b9;
+  font-weight: bold;
+}
+.ex body {
+  margin: 0;
+  padding: 0;
+}
+/*===================================
+  証明
+===================================*/
+.prf {
+  position: relative;
+  padding: 1.5em 1em 0.5em 1em;
+  margin: 0.5em 0;
+  top: 0;
+}
+
+.prf .no-title {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.prf:before {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 8em;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-left: dashed 2px #79a9b9;
+  border-top: dashed 2px #79a9b9;
+  border-bottom: dashed 2px #79a9b9;
+  left: 0;
+}
+
+.prf .title {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  padding: 0 9px;
+  margin: 0 0 10em 0;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  background: #79a9b9;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.prf body {
+  margin: 0;
+  padding: 0;
+}
