@@ -1,66 +1,109 @@
-/* <system section="theme" selected="handwriting"> */
-@import "/css/theme/handwriting/handwriting.css";
+/* <system section="theme" selected="smooth"> */
+@import "/css/theme/smooth/smooth.css";
 /* </system> */
 
 /* <system section="background" selected="default"> */
 /* default */
 /* </system> */
-
-/*===================================
-  目次
-===================================*/
-/* 参考: https://www.haurin-zatunenlife.com/entry/hatenablog-mokuji-midasi*/
-/*目次のデザイン変更*/
-.table-of-contents {
-  padding: 15px 10px 15px 35px; /* 枠内の余白(上右下左) */
-  font-size: 100%; /* 文字サイズ */
-  border: dotted 1px #777; /* 線の種類と色 */
-  background: rgba(219, 236, 238, 0.2); /* 背景 */
-}
-.table-of-contents:before {
-  content: "目次";
-  font-size: 140%;
-  color: #000; /* 文字の色 */
+@font-face {
+  font-family: HuiFontP109;
+  src: url(https://cdn.blog.st-hatena.com/fonts/public/HuiFont/HuiFontP109.eot?version=a70337c8c419d80473c7f33e091157eb3e6d7fee&env=production);
+  src: url(https://cdn.blog.st-hatena.com/fonts/public/HuiFont/HuiFontP109.eot?version=a70337c8c419d80473c7f33e091157eb3e6d7fee&env=production)
+      format("embedded-opentype"),
+    url(https://cdn.blog.st-hatena.com/fonts/public/HuiFont/HuiFontP109.woff?version=c3931e420dc7945d84d33c2a5b46baf25e84cfec&env=production)
+      format("woff"),
+    url(https://cdn.blog.st-hatena.com/fonts/public/HuiFont/HuiFontP109.ttf?version=ca182ccfb2bdd8761a18a9782bbbdb83055c4f81&env=production)
+      format("truetype"),
+    url(https://cdn.blog.st-hatena.com/fonts/public/HuiFont/HuiFontP109.svg?version=0ea582bf20095e22f57631de768f9a39e60a6f09&env=production)
+      format("svg");
 }
 
 /*===================================
   見出し
 ===================================*/
-.entry-content h5 {
-  font-weight: bold;
-}
-
-.entry-content h6 {
-  font-weight: bold;
-}
-/* 参考: CSSのコピペだけ！おしゃれな見出しのデザイン例まとめ68選 https://saruwakakun.com/html-css/reference/h-design */
-/* 多少変更 */
-
 .entry-content h1 {
+  font-size: 160%;
+  font-weight: normal;
   padding: 0.5em 0.6em;
   /*color: #010101;文字色*/
-  background: #ecf5f8; /*背景色*/
+  background: hsl(184, 35%, 94%); /*背景色*/
   /*#e7f3f3*/
-  border-bottom: solid 4px #bdd4dc; /*下線*/
+  border-bottom: solid 4px hsl(184, 35%, 82%); /*下線*/
 }
 
 .entry-content h2 {
+  font-size: 150%;
+  font-weight: normal;
+
   padding-left: 0.1em;
   background: none;
-  border-bottom: dashed 2px #bdd4dc;
+  border-bottom: dashed 2px hsl(184, 35%, 82%);
 }
 
-.entry-content h4 {
-  font-size: 125%;
-  background-size: auto auto;
+.entry-content h3 {
+  font-size: 140%;
+  font-weight: normal;
+  padding-left: 40px;
+  background: url(https://cdn.blog.st-hatena.com/css/theme/handwriting/img/ribbon.png?version=434688b…&env=production)
+    no-repeat 0;
+  border-bottom: none;
 }
 
 /*===================================
-  summary
+  ブログの背景
 ===================================*/
-/*summaryの矢印の表示(このデザインではデフォで矢印が表示されないので表示させる)*/
-summary {
-  display: list-item;
+body,
+html {
+  background: hsl(184, 35%, 94%);
+}
+
+/*===================================
+  ブログのサイドの部分
+===================================*/
+#box2 {
+  /*デフォルトは hsla(0, 0%, 100%, .2)*/
+  background: hsla(0, 0%, 100%, 0);
+}
+
+/*===================================
+  リンク
+===================================*/
+
+.entry-content a {
+  color: #ffb2a4;
+}
+
+.hatena-module-profile .id a {
+  color: #ffb2a4;
+}
+
+/*===================================
+  タイトル
+===================================*/
+
+#title a {
+  font-family: HuiFontP109, sans-serif;
+}
+
+/*===================================
+  目次
+===================================*/
+/* 参考: https://www.haurin-zatunenlife.com/entry/hatenablog-mokuji-midasi*/
+/* https://www.papico405.com/entry/2019/02/15/205027 */
+/*目次のデザイン変更*/
+.table-of-contents {
+  padding: 15px 10px 15px 15px; /* 枠内の余白(上右下左) */
+  font-size: 100%; /* 文字サイズ */
+  border: solid 2px hsl(184, 35%, 82%); /* 線の種類と色 */
+  background: hsl(184, 35%, 95%); /* 背景 */
+  border-radius: 6px;
+}
+.table-of-contents:before {
+  content: "目次";
+  margin: 0 0 0 -22px;
+  font-size: 110%;
+  font-weight: bold;
+  color: #000; /* 文字の色 */
 }
 
 /*===================================
@@ -99,20 +142,20 @@ summary {
 ===================================*/
 .entry-content p {
   /*デフォは 0 0 15.2px 0
-    枠とフィットするようにマージンを上下対称にする*/
+  枠とフィットするようにマージンを上下対称にする*/
   margin: 8px 0 8px 0;
 }
 
 /*===================================
-  定理
+  定理・定義など
 ===================================*/
 /*参考: 【CSS】おしゃれなボックスデザイン（囲み枠）のサンプル30 https://saruwakakun.com/html-css/reference/box */
 .thm {
   position: relative;
   margin: 2em 0;
   padding: 0.5em 1em;
-  border: solid 3px #79a9b9;
-  border-radius: 0 5px 5px 5px;
+  border: solid 3px hsl(184, 35%, 60%);
+  border-radius: 0 6px 6px 5px;
 }
 .thm .title {
   position: absolute;
@@ -123,7 +166,7 @@ summary {
   height: 25px;
   line-height: 25px;
   font-size: 17px;
-  background: #79a9b9;
+  background: hsl(184, 35%, 60%);
   color: #ffffff;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
@@ -134,14 +177,14 @@ summary {
 }
 
 /*===================================
-  例・問題
+例・問題
 ===================================*/
 .ex {
   position: relative;
   margin: 2em 0;
   padding: 0.7em 1em 0.5em 1em;
-  border: solid 3px #79a9b9;
-  border-radius: 8px;
+  border: solid 3px hsl(184, 35%, 60%);
+  border-radius: 7px;
 }
 .ex .title {
   position: absolute;
@@ -152,7 +195,7 @@ summary {
   line-height: 1;
   font-size: 19px;
   background: #fff;
-  color: #79a9b9;
+  color: hsl(184, 35%, 60%);
   font-weight: bold;
 }
 .ex body {
@@ -160,7 +203,7 @@ summary {
   padding: 0;
 }
 /*===================================
-  証明
+証明
 ===================================*/
 .prf {
   position: relative;
@@ -181,9 +224,9 @@ summary {
   height: 100%;
   display: inline-block;
   box-sizing: border-box;
-  border-left: dashed 2px #79a9b9;
-  border-top: dashed 2px #79a9b9;
-  border-bottom: dashed 2px #79a9b9;
+  border-left: dashed 2px hsl(184, 35%, 60%);
+  border-top: dashed 2px hsl(184, 35%, 60%);
+  border-bottom: dashed 2px hsl(184, 35%, 60%);
   left: 0;
 }
 
@@ -197,7 +240,7 @@ summary {
   height: 20px;
   line-height: 20px;
   font-size: 14px;
-  background: #79a9b9;
+  background: hsl(184, 35%, 60%);
   color: #ffffff;
   font-weight: bold;
 }
