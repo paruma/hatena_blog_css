@@ -43,7 +43,7 @@
 .entry-content h3 {
   font-size: 140%;
   font-weight: normal;
-  padding-left: 40px;
+  padding: 5px 0 5px 40px;
   background: url(https://cdn.blog.st-hatena.com/css/theme/handwriting/img/ribbon.png?version=434688b…&env=production)
     no-repeat 0;
   border-bottom: none;
