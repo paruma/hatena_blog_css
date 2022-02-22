@@ -208,7 +208,7 @@ html {
 .thm {
   position: relative;
   margin: 1em 0;
-  padding: 2em 1em 0.5em 1em;
+  padding: 1.5em 1em 0 1em;
   border: solid 3px hsl(184, 35%, 60%);
   border-radius: 5px 6px 6px 5px;
   background: hsl(184, 35%, 95%);
@@ -239,10 +239,11 @@ html {
 .ex {
   position: relative;
   margin: 1.5em 0 1em 0;
-  padding: 0.7em 1em 0.5em 1em;
+  padding: 0.2em 1em 0em 1em;
   border: solid 3px hsl(184, 35%, 60%);
   border-radius: 7px;
 }
+
 .ex .title {
   position: absolute;
   display: inline-block;
@@ -264,13 +265,15 @@ html {
 ===================================*/
 .prf {
   position: relative;
-  padding: 1.5em 1em 0.5em 1em;
+  padding: 1.2em 1em 0.01em 1em;
   margin: 1em 0;
   top: 0;
 }
 
+
+
 .prf .no-title {
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.01em 1em 0.01em 1em;
 }
 
 .prf:before {
