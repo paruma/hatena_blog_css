@@ -176,9 +176,15 @@ html {
   pタグの変更
 ===================================*/
 .entry-content p {
-  /*デフォは 0 0 15.2px 0
-  枠とフィットするようにマージンを上下対称にする*/
-  margin: 8px 0 8px 0;
+  margin: 0.6em 0 0.6em 0;
+}
+
+/*===================================
+  liタグの変更
+===================================*/
+
+.entry-content li {
+  margin: 0.2em 0 0.2em 0;
 }
 
 /*===================================
@@ -201,7 +207,7 @@ html {
 /*参考: 【CSS】おしゃれなボックスデザイン（囲み枠）のサンプル30 https://saruwakakun.com/html-css/reference/box */
 .thm {
   position: relative;
-  margin: 2em 0;
+  margin: 1em 0;
   padding: 2em 1em 0.5em 1em;
   border: solid 3px hsl(184, 35%, 60%);
   border-radius: 5px 6px 6px 5px;
@@ -232,7 +238,7 @@ html {
 ===================================*/
 .ex {
   position: relative;
-  margin: 2em 0;
+  margin: 1.5em 0 1em 0;
   padding: 0.7em 1em 0.5em 1em;
   border: solid 3px hsl(184, 35%, 60%);
   border-radius: 7px;
@@ -259,7 +265,7 @@ html {
 .prf {
   position: relative;
   padding: 1.5em 1em 0.5em 1em;
-  margin: 0.5em 0;
+  margin: 1em 0;
   top: 0;
 }
 
