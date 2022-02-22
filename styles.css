@@ -187,14 +187,16 @@ html {
 .thm {
   position: relative;
   margin: 2em 0;
-  padding: 0.5em 1em;
+  padding: 2em 1em 0.5em 1em;
   border: solid 3px hsl(184, 35%, 60%);
-  border-radius: 0 6px 6px 5px;
+  border-radius: 5px 6px 6px 5px;
+  background: hsl(184, 35%, 95%);
 }
+
 .thm .title {
   position: absolute;
   display: inline-block;
-  top: -27px;
+  top: -1px;
   left: -3px;
   padding: 0 9px;
   height: 25px;
@@ -203,7 +205,7 @@ html {
   background: hsl(184, 35%, 60%);
   color: #ffffff;
   font-weight: bold;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 5px 0;
 }
 .thm .body {
   margin: 0;
