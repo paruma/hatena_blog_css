@@ -112,14 +112,13 @@ html {
 /* 参考: https://www.haurin-zatunenlife.com/entry/hatenablog-mokuji-midasi*/
 /* https://www.papico405.com/entry/2019/02/15/205027 */
 /*目次のデザイン変更*/
-.table-of-contents {
-  padding: 15px 10px 15px 15px; /* 枠内の余白(上右下左) */
+.entry-content .table-of-contents {
   font-size: 100%; /* 文字サイズ */
   border: solid 2px hsl(184, 35%, 82%); /* 線の種類と色 */
-  background: hsl(184, 35%, 95%); /* 背景 */
+  background: hsl(184, 35%, 97%); /* 背景 */
   border-radius: 6px;
 }
-.table-of-contents:before {
+.entry-content .table-of-contents:before {
   content: "目次";
   margin: 0 0 0 -22px;
   font-size: 110%;
