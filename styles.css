@@ -91,11 +91,19 @@ html {
 ===================================*/
 
 .entry-content a {
-  color: #ffb2a4;
+  color: hsl(9, 100%, 72%);
+}
+
+.entry-content a:hover {
+  color: hsl(9, 100%, 72%);
 }
 
 .hatena-module-profile .id a {
-  color: #ffb2a4;
+  color: hsl(9, 100%, 72%);
+}
+
+.hatena-module-profile .id a:hover {
+  color: hsl(9, 100%, 72%);
 }
 
 /*===================================
