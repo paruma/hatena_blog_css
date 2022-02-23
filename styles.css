@@ -25,19 +25,16 @@
   font-size: 160%;
   font-weight: normal;
   padding: 0.5em 0.6em;
-  /*color: #010101;文字色*/
   background: hsl(184, 35%, 94%); /*背景色*/
-  /*#e7f3f3*/
-  border-bottom: solid 4px hsl(184, 35%, 82%); /*下線*/
+  border-bottom: solid 4px hsl(184, 35%, 70%); /*下線*/
 }
 
 .entry-content h2 {
   font-size: 150%;
   font-weight: normal;
-
   padding-left: 0.1em;
   background: none;
-  border-bottom: dashed 2px hsl(184, 35%, 82%);
+  border-bottom: dashed 2px hsl(184, 35%, 70%);
 }
 
 .entry-content h3 {
@@ -96,7 +93,6 @@ html {
 /*===================================
   リンク
 ===================================*/
-
 .entry-content a {
   color: hsl(9, 100%, 72%);
 }
@@ -116,7 +112,6 @@ html {
 /*===================================
   タイトル
 ===================================*/
-
 #title a {
   font-family: HuiFontP109, sans-serif;
 }
@@ -182,7 +177,6 @@ html {
 /*===================================
   liタグの変更
 ===================================*/
-
 .entry-content li {
   margin: 0.2em 0 0.2em 0;
 }
