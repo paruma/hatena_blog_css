@@ -259,13 +259,14 @@ html {
 ===================================*/
 .prf {
   position: relative;
-  padding: 1.2em 1em 0.01em 1em;
+  padding: 1.2em 1em 0 1em;
   margin: 1em 0;
   border: dashed 2px hsl(184, 35%, 60%);
 }
 
 .prf.no-title {
-  padding: 0.01em 1em 0.01em 1em;
+  /*padding_topを0にするとなぜか表示が崩れる*/
+  padding: 0.01em 1em 0em 1em;
 }
 
 .prf .title {
